@@ -27,7 +27,7 @@ EcoligoDemo (Project)
 │       │      │      ├─ browser
 │       │      │      │       └─ driver
 │       │      │      ├─ helper
-│       │      │      ├─ model
+│       │      │      └─ model
 │       │      ├─ pages
 │       │      └─ tests
 │       │             └─ data
