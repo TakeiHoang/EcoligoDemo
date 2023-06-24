@@ -1,0 +1,32 @@
+[
+  {
+    "email": "invalid.email.com"
+  },
+  {
+    "email": "invalid@"
+  },
+  {
+    "email": "invalid@email"
+  },
+  {
+    "email": "test invalid@email.com"
+  },
+  {
+    "email": "test!@#invalid@email.com"
+  },
+  {
+    "email": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz@email.com"
+  },
+  {
+    "email": "@email.com"
+  },
+  {
+    "email": "test@invalid!email.com"
+  },
+  {
+    "email": "test@email.invalidtld"
+  },
+  {
+    "email": "tést@email.com"
+  }
+]
