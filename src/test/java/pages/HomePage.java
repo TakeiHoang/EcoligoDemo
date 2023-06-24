@@ -1,6 +1,5 @@
 package pages;
 
-import com.relevantcodes.extentreports.ExtentTest;
 import core.helper.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import java.io.IOException;
 
 public class HomePage extends BasePage {
-    public HomePage(WebDriver driver, ExtentTest test) {
-        super(driver, test);
+    public HomePage(WebDriver driver) {
+        super(driver);
     }
 
     // Elements
@@ -23,7 +22,7 @@ public class HomePage extends BasePage {
     public HomePage goToHomePage() throws IOException {
         String url = PropertiesReader.getPropName("baseUrl");
         driver.navigate().to(url);
-        return new HomePage(driver, test);
+        return new HomePage(driver);
     }
 
     /**
@@ -34,6 +33,6 @@ public class HomePage extends BasePage {
     public LoginPage navigateToLoginPage() {
         findElement(loginLink).click();
         driver.switchTo().window(driver.getWindowHandles().toArray()[1].toString());
-        return new LoginPage(driver, test);
+        return new LoginPage(driver);
     }
 }

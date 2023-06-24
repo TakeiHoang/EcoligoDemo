@@ -17,18 +17,12 @@ public class BaseTests {
     protected RegisterPage registerPage;
     protected MyAccountPage myAccountPage;
 
-    /*
-    Set up reporter
-     */
     @BeforeSuite
     protected void startReport() {
         report = new ExtentReports(".\\extent_report\\TestResults.html");
         test = report.startTest("ExtentReports");
     }
 
-    /*
-    Stop report and generate HTML file
-     */
     @AfterSuite
     protected static void endTest() {
         report.endTest(test);
@@ -36,13 +30,10 @@ public class BaseTests {
         report.close();
     }
 
-    /*
-    Set up browser and navigate to home page
-     */
     @BeforeMethod
     protected void setUp() throws Exception {
         driver = DriverManager.driverInit();
-        homePage = new HomePage(driver, test);
+        homePage = new HomePage(driver);
         homePage = homePage.goToHomePage();
     }
 
@@ -59,9 +50,11 @@ public class BaseTests {
     private static final String SPECIAL_CHARS = "!@#$%^&*()";
     private static final String ALL_CHARS = UPPERCASE_CHARS + LOWERCASE_CHARS + SPECIAL_CHARS;
 
-    /*
-    Generate random password, include at least 1 Uppercase, 1 special char, and lower case
-    @param length: Length of the password
+    /**
+     * This method create random password depend on length.
+     *
+     * @param length length of the password.
+     * @return password.
      */
     public static String generatePassword(int length) {
         SecureRandom random = new SecureRandom();

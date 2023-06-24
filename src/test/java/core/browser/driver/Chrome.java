@@ -26,9 +26,4 @@ public class Chrome implements IDriver {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
         return new ChromeDriver(getOptions());
     }
-
-    @Override
-    public void setDriverOptions(Object options) {
-        this.options = (ChromeOptions) options;
-    }
 }

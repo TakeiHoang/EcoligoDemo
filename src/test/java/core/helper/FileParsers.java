@@ -8,7 +8,13 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class FileParsers<T> {
-
+    /**
+     * This method get property browser value.
+     *
+     * @param filePath file directory.
+     * @param modelClass model class.
+     * @return two-dimensional array of objects.
+     */
     public static <T> Object[][] parseJson(String filePath, Class<T> modelClass) throws IOException {
         byte[] jsonData = Files.readAllBytes(Path.of(filePath));
         ObjectMapper objectMapper = new ObjectMapper();

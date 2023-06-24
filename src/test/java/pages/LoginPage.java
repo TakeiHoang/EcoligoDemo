@@ -1,16 +1,12 @@
 package pages;
 
-import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class LoginPage extends BasePage {
 
-    public LoginPage(WebDriver driver, ExtentTest test) {
-        super(driver, test);
+    public LoginPage(WebDriver driver) {
+        super(driver);
     }
 
     // Elements
@@ -24,6 +20,6 @@ public class LoginPage extends BasePage {
      */
     public RegisterPage navigateToRegisterPage(int waitInMillis) {
         findElement(registerLink, waitInMillis).click();
-        return new RegisterPage(driver, test);
+        return new RegisterPage(driver);
     }
 }

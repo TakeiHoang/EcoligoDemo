@@ -1,6 +1,5 @@
 package pages;
 
-import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,8 +8,8 @@ import java.util.List;
 
 public class RegisterPage extends BasePage {
 
-    public RegisterPage(WebDriver driver, ExtentTest test) {
-        super(driver, test);
+    public RegisterPage(WebDriver driver) {
+        super(driver);
     }
 
     // Elements
@@ -47,7 +46,7 @@ public class RegisterPage extends BasePage {
      */
     public MyAccountPage submitRegister(int waitForMillis) {
         findElement(registerButton, waitForMillis).click();
-        return new MyAccountPage(driver, test);
+        return new MyAccountPage(driver);
     }
 
     /**
@@ -56,7 +55,7 @@ public class RegisterPage extends BasePage {
      * @param waitForMillis the driver wait for set of time to be timeout.
      * @return List string
      */
-    public List<String> getPasswordAndConfirmPasswordType(int waitForMillis){
+    public List<String> getPasswordAndConfirmPasswordType(int waitForMillis) {
         List<String> type = null;
         type.add(findElement(passwordText, waitForMillis).getAttribute("type"));
         type.add(findElement(confirmPasswordText, waitForMillis).getAttribute("type"));

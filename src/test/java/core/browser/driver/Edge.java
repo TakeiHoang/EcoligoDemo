@@ -28,9 +28,4 @@ public class Edge implements IDriver {
         System.setProperty("webdriver.edge.driver", "src/test/resources/driver/msedgedriver.exe");
         return new EdgeDriver(getOptions());
     }
-
-    @Override
-    public void setDriverOptions(Object options) {
-        this.options = (EdgeOptions) options;
-    }
 }

@@ -1,13 +1,12 @@
 package pages;
 
-import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class MyAccountPage extends BasePage {
 
-    public MyAccountPage(WebDriver driver, ExtentTest test) {
-        super(driver, test);
+    public MyAccountPage(WebDriver driver) {
+        super(driver);
     }
 
     // Elements
@@ -22,8 +21,8 @@ public class MyAccountPage extends BasePage {
      */
     public boolean verifyIfUserLoggedIn(int waitInMillis) {
         try {
-            findElement(myAccountMenu).isDisplayed();
-            findElement(userName).isDisplayed();
+            findElement(myAccountMenu, waitInMillis).isDisplayed();
+            findElement(userName, waitInMillis).isDisplayed();
             return true;
         } catch (Exception e) {
             return false;

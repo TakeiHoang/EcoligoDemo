@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c101a2f3-7282-4688-b9ce-4c7c52c16500" name="Changes" comment="&#10;Upload for Ecoligo Demo" />
+    <list default="true" id="c101a2f3-7282-4688-b9ce-4c7c52c16500" name="Changes" comment="Remove un-necessary test report">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/browser/IDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/browser/IDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/browser/driver/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/browser/driver/Chrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/browser/driver/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/browser/driver/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/browser/driver/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/browser/driver/Firefox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/helper/FileParsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/helper/FileParsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/helper/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/helper/PropertiesReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +30,19 @@
       <list>
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="52a3d3d7-4ca1-4f7c-b05b-8cbcb08cd6a9" />
+        <option name="url" value="https://github.com/TakeiHoang/EcoligoDemo.git" />
+      </UrlAndAccount>
     </option>
   </component>
   <component name="ProblemsViewState">
@@ -38,11 +66,12 @@
       <recent name="core.browser.driver" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vhxho\IdeaProjects\EcoligoDemo\Challenge_Document" />
       <recent name="C:\Users\vhxho\IdeaProjects\EcoligoDemo\src\test\resources\driver" />
       <recent name="C:\Users\vhxho\IdeaProjects\EcoligoDemo\driver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests">
+  <component name="RunManager" selected="TestNG.LoginTests.registerWithValidFields">
     <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcoligoDemo" />
       <shortenClasspath name="NONE" />
@@ -94,8 +123,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.LoginTests.registerWithValidFields" />
+        <item itemvalue="TestNG.LoginTests" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687629822666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Challenge document into project">
+      <option name="closed" value="true" />
+      <created>1687630130369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687630130369</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +169,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;Upload for Ecoligo Demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Upload for Ecoligo Demo" />
+    <MESSAGE value="Add Challenge document into project" />
+    <MESSAGE value="Remove un-necessary test report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove un-necessary test report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

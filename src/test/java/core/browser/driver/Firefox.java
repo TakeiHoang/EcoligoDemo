@@ -28,9 +28,4 @@ public class Firefox implements IDriver {
         System.setProperty("webdriver.gecko.driver", "src/test/resources/driver/geckodriver.exe");
         return new FirefoxDriver((getOptions()));
     }
-
-    @Override
-    public void setDriverOptions(Object options) {
-        this.options = (FirefoxOptions) options;
-    }
 }

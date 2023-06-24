@@ -5,7 +5,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertiesReader {
-    public static String getDriverFromPropertiesFile(String propertyName) throws IOException {
+    /**
+     * This method get property browser value.
+     *
+     * @param propNames property name.
+     * @return browser value.
+     */
+    public static String getDriverFromPropertiesFile(String propNames) {
         String browser = "";
         try (FileInputStream input = new FileInputStream(".\\test.properties")) {
             Properties prop = new Properties();
@@ -13,7 +19,7 @@ public class PropertiesReader {
             prop.load(input);
 
             // get the property value and print it out
-            browser = prop.getProperty(propertyName);
+            browser = prop.getProperty(propNames);
 
         } catch (Exception e) {
             System.out.println("Exception: " + e.getMessage());
@@ -21,6 +27,12 @@ public class PropertiesReader {
         return browser;
     }
 
+    /**
+     * This method get property value in test.properties file except browser.
+     *
+     * @param propNames property name.
+     * @return property value.
+     */
     public static String getPropName(String propNames) throws IOException {
         String value = "";
         try (FileInputStream input = new FileInputStream(".\\test.properties")) {

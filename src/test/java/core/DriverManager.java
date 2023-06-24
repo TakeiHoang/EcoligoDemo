@@ -11,6 +11,12 @@ import java.io.IOException;
 import java.time.Duration;
 
 public class DriverManager {
+    /**
+     * This method create instance for web driver depend on browser.
+     *
+     * @param browser Get element by.
+     * @return Web driver instance.
+     */
     private static WebDriver getDriver(String browser) throws Exception {
         return switch (browser.toUpperCase()) {
             case "CHROME" -> new Chrome().createDriver();
@@ -20,6 +26,11 @@ public class DriverManager {
         };
     }
 
+    /**
+     * This method get browser property and set implicit wait for driver.
+     *
+     * @return Web driver instance.
+     */
     public static WebDriver driverInit() throws Exception {
         WebDriver driver = getDriver(PropertiesReader.getDriverFromPropertiesFile("browser"));
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));

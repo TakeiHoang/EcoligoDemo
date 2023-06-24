@@ -1,6 +1,5 @@
 package pages;
 
-import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,11 +11,9 @@ import java.util.List;
 public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    protected static ExtentTest test;
 
-    public BasePage(WebDriver driver, ExtentTest test) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
-        BasePage.test = test;
     }
 
     /**
@@ -41,7 +38,7 @@ public class BasePage {
      * This method performs find element while waiting the element for a set of time before timeout.
      * Otherwise it will return immediately.
      *
-     * @param by Get element by.
+     * @param by            Get element by.
      * @param timeoutMillis the driver wait for set of time to be timeout.
      * @return Web element.
      */
@@ -68,7 +65,7 @@ public class BasePage {
      * This method performs find list of elements while waiting the element for a set of time before timeout.
      * Otherwise it will return immediately.
      *
-     * @param by Get element by.
+     * @param by            Get element by.
      * @param timeoutMillis the driver wait for set of time to be timeout.
      * @return Web element.
      */
