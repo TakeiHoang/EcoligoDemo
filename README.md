@@ -1,4 +1,4 @@
-# EcoligoDemo - Brief Explanation
+# EcoligoDemo - Brief Explanation (Challenge 2 - Include answer for question 4)
 # [Test Planning]
 - **Test Case Identification**: Identify the test cases based on the user registration form requirements and functionality.
 - **Test Case Design**: Design each test case with a specific objective and set of steps to follow. Include test data for different input combinations and expected outcomes.
